@@ -1,10 +1,10 @@
-﻿internal class Program
+﻿class Hilo
 {
-    private static void Main(string[] args)
+     static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello there");
-        }
+        Console.WriteLine("Hello there");
     }
+
+    
 }
+
