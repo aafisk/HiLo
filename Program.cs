@@ -32,11 +32,13 @@
 
             Console.WriteLine("Play again? [y/n]");
             string playAgain = Console.ReadLine() ?? "";
-            if (playAgain == "n")
+            if ((playAgain == "n") || (game.score <= 0))
             {
                 loop = false;
             }
         }
+
+        Console.WriteLine("Thanks for playing");
     }
 
     

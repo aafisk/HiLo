@@ -25,8 +25,8 @@ class Deck {
 
         for (int i = 1; i <= 104; i++) 
         {
-            int cardIndex1 = rnd.Next(1, cards.Count + 1);
-            int cardIndex2 = rnd.Next(1, cards.Count + 1);
+            int cardIndex1 = rnd.Next(0, cards.Count);
+            int cardIndex2 = rnd.Next(0, cards.Count);
             int placeholder = cards[cardIndex1];
             cards[cardIndex1] = cards[cardIndex2];
             cards[cardIndex2] = placeholder;
