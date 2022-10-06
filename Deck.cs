@@ -2,8 +2,8 @@ class Deck {
 
     Random rnd = new Random();
     List<int> cards = new List<int>();
-    int currentCard;
-    int nextCard;
+    public int currentCard;
+    public int nextCard;
 
     public Deck() {
 
@@ -19,7 +19,6 @@ class Deck {
         shuffleDeck();
 
         currentCard = drawCard();
-        nextCard = drawCard();
     }
 
     public void shuffleDeck() {
