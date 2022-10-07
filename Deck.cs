@@ -16,11 +16,14 @@ class Deck {
             }
         }
 
+        //Shuffle the cards after they are all added
         shuffleDeck();
 
+        //Set the current card
         currentCard = drawCard();
     }
 
+    //Randomly changes the position of cards in the list
     public void shuffleDeck() {
 
         for (int i = 1; i <= 104; i++) 
@@ -33,6 +36,7 @@ class Deck {
         }
     }
 
+    //Shuffles the deck and returns the first card in the list
     public int drawCard() {
         shuffleDeck();
         return cards[0];
